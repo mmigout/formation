@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/mmigout/formation.git
     targetRevision: HEAD
-    path: core/argocd
+    path: core/argo-cd
   destination:
     server: https://kubernetes.default.svc 
     namespace: argocd

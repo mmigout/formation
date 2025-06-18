@@ -9,7 +9,7 @@ secretGenerator:
 - name: my-repo
   literals:
     - type=git
-    - url=https://github.com/mmigout/formation
+    - url=https://github.com/mmigout/formation.git
   options:
     labels:
       argocd.argoproj.io/secret-type: repository

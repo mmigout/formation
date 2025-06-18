@@ -5,8 +5,6 @@ metadata:
   namespace: argocd
 spec:
   goTemplate: true
-  goTemplateOptions:
-    - missingkey=error
   generators:
   - git:
       repoURL: https://github.com/mmigout/formation.git
@@ -28,7 +26,6 @@ spec:
       syncPolicy:
         automated:
           allowEmpty: true
-          enabled: true
           prune: true
           selfHeal: true
         syncOptions:

@@ -5,3 +5,11 @@ namespace: argocd
 resources:
 - https://raw.githubusercontent.com/argoproj/argo-cd/v2.7.2/manifests/install.yaml
 - ns.yaml
+secretGenerators:
+- name: my-repo
+  literals:
+    - type=git
+    - url=https://github.com/mmigout/formation
+  options:
+    labels:
+      argocd.argoproj.io/secret-type: repository

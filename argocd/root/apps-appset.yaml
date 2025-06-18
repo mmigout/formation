@@ -27,9 +27,9 @@ spec:
         namespace: '{{.path.basename}}'
       syncPolicy:
         automated:
+          allowEmpty: true
           enabled: true
           prune: true
           selfHeal: true
-          allowEmpty: true
         syncOptions:
         - CreateNamespace=true
